@@ -18,7 +18,13 @@ string[] CreateStringArray ()
 
 void ShowStringArray(string[] array)
 {
-    for(int i = 0; i < size; i++) Console.Write($"{array[i]}  ");
+    for(int i = 0; i < size; i++)
+    {
+        if(array[i]!= null)
+        {
+            Console.Write($"{array[i]}  ");
+        }
+    }
 }
 
 string[] LenghtOfArray(string[] array)
@@ -33,6 +39,8 @@ string[] LenghtOfArray(string[] array)
     }
     return newArray;
 }
+
+
 
 string[] myArray = CreateStringArray();
 ShowStringArray(myArray);
