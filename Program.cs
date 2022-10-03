@@ -14,3 +14,10 @@ string[] CreateStringArray ()
     }
     return array;
 }
+
+void ShowStringArray(string[] array)
+{
+    for(int i = 0; i < size; i++) Console.Write($"{array[i]}  ");
+}
+
+ShowStringArray(CreateStringArray());
